@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Contact</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,500,600|Roboto:400,700" rel="stylesheet">
+<!--CSS============================================= -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+
+{% endblock %}
+
+
+
+
+{% block body %}
+<!-- Start Preloader Area -->
+<!-- <div class="preloader-area">
+    <div class="loader-box">
+        <div class="loader"></div>
+    </div>
+</div> -->
+<!-- End Preloader Area -->
+
+<!-- Start Header Area -->
+<header id="header">
+    <div class="container main-menu">
+
+        <div class="row align-items-center d-flex">
+
+            <div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class=""><a href="/">Accueil</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a class="active" href="/contact">Contact</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<!-- End Header Area -->
+
+<!-- start banner Area -->
+<section class="banner-area relative portfolioheader">
+    <div class="container portfolioheader-container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12 portfolioheader-about">
+                <h1 class="text-white">Contact</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+
+
+
+
+
+
+
+
+
+<!-- /////////////////////////////////// -->
+
+
+<!-- Start Contact Area -->
+<div class="site-section"  data-aos="fade">
+    <div class="container">
+<br/><br/>
+      <div class="row">
+        <div class="col-lg-8 mb-5">
+          <form action="#">
+
+
+            <div class="row form-group">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <label class=" labelcontact" for="fname">Prenom</label>
+                <input type="text" id="fname" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label class="labelcontact" for="lname">Nom</label>
+                <input type="text" id="lname" class="form-control">
+              </div>
+            </div>
+
+            <div class="row form-group">
+
+              <div class="col-md-12">
+                <label class="labelcontact" for="email">Email</label> 
+                <input type="email" id="email" class="form-control">
+              </div>
+            </div>
+
+            <div class="row form-group">
+
+              <div class="col-md-12">
+                <label class="labelcontact" for="subject">Objet</label> 
+                <input type="subject" id="subject" class="form-control">
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="labelcontact" for="message">Message</label> 
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <input type="submit" value="Send Message" class="btn text-white py-2 px-4 subcontact">
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+        <div  class=" addrss col-lg-3 ml-auto">
+          <div class="mb-3">
+            <p class="labelcontact mb-0 font-weight-bold ">Adresse</p>
+            <p class="mb-4">203 Fake St. Rue,<br/> 63000, Clermont-Ferrand, France</p>
+
+            <p class="labelcontact mb-0 font-weight-bold ">Mobile</p>
+            <p class="mb-4">(+33)689748563</p>
+
+            <p class="labelcontact mb-0 font-weight-bold ">Email</p>
+            <p class="mb-0">test@gmail.com</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End Contact Area -->
+
+
+
+<!-- //////////////////////////////////////////////// -->
+
+
+
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                <div class="single-footer-widget">
+                    <!-- <h2 class="suivez_moi">Suivez moi</h2> -->
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href=""><i class="ti-facebook"></i><span
+                                        class="socialSpan">Facebook</span></a></li>
+                            <li><a href=""><i class="ti-twitter"></i><span class="socialSpan">Twitter</span>
+                                </a></li>
+                            <li><a href=""><i class="ti-instagram"></i><span
+                                        class="socialSpan">Instagram</span> </a></li>
+                                        <li><a href=""><i class="ti-pinterest"></i><span class="socialSpan">Pinterest</span>
+                                        </a></li>
+                            <li><a href=""><i class="ti-youtube"></i><span class="socialSpan">Youtube</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="social-icons2">
+                        <ul>
+                          <li><a href="#"><i class="ti-facebook">facebook</i></a></li>
+                          <li><a href="#"><i class="ti-twitter">twitter</i></a></li>
+                          <li><a href="#"><i class="ti-instagram">instagram</i></a></li>
+                          <li><a href="#"><i class="ti-pinterest">pinterest</i></a></li>
+                          <li><a href="#"><i class="ti-youtube">youtube</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <!-- <div class="single-footer-widget">
+                    <p>
+                        Text accrocheur 
+                    </p>
+                </div> -->
+            </div>
+            <div class="col-lg-5  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <div id="logo">
+                        <a href="index.html"><img src="{{ url_for('static', filename='img/projet-vinax.png')}}" alt=""
+                                title="" /></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="footer-text">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+<!-- ####################### Start Scroll to Top Area ####################### -->
+<div id="back-top">
+    <a title="Go to Top" href="#">
+        <i class="ti-angle-double-up"></i>
+    </a>
+</div>
+<!-- ####################### End Scroll to Top Area ####################### -->
+<!-- ///P -->
+<script src="{{ url_for('static', filename='js-p/jquery/jquery-2.2.4.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js-p/popper.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js-p/bootstrap.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js-p/plugins.js')}}"></script>
+<script src="{{ url_for('static', filename='js-p/active.js')}}"></script>
+<!-- //////// -->
+<script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/easing.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/hoverIntent.js')}}"></script>
+<script src="{{ url_for('static', filename='js/superfish.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/mn-accordion.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/mail-script.js')}}"></script>
+<script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+
+{% endblock %}

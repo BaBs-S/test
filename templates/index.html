@@ -1,0 +1,612 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Accueil</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,500,600|Roboto:400,700" rel="stylesheet">
+<!--CSS============================================= -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+
+{% endblock %}
+
+
+
+
+{% block body %}
+<!-- Start Preloader Area -->
+<!-- <div class="preloader-area">
+    <div class="loader-box">
+        <div class="loader"></div>
+    </div>
+</div> -->
+<!-- End Preloader Area -->
+
+<!-- Start Header Area -->
+<header id="header">
+    <div class="container main-menu">
+        
+        <div class="row align-items-center d-flex">
+            
+            <div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class=""><a class="active" href="/">Accueil</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="about.html">Contact</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <!-- <li class="menu-has-children"><a href="#">Pages</a>
+                        <ul>
+                            <li><a href="elements.html">Elements</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="project-details.html">Project Details</a></li>
+                        </ul>
+                    </li> -->
+
+                    <!-- <li class="menu-has-children"><a href="">Blog</a>
+                        <ul>
+                            <li><a href="blog-home.html">Blog Home</a></li>
+                            <li><a href="blog-single.html">Blog Single</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </nav>
+            </div>
+            
+        </div>
+        
+    </div>
+</header>
+<!-- End Header Area -->
+
+<!-- start banner Area -->
+<section class="home-banner-area">
+    <div class="container-fluid">
+        <div class="row fullscreen d-flex align-items-center">
+            
+            <div class="banner-content col-lg-4 col-md-8 justify-content-center ">
+                <h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">TE<span>S</span>T  <br />
+                    LE<span>O</span>NEL</h1>
+                <div class="designation mb-25 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <p>TEST</p>
+                </div>
+                <a href="#" class="primary-btn" data-text="A Propos de moi">
+                    <span>A</span>
+                    <span> </span>
+                    <span>P</span>
+                    <span>r</span>
+                    <span>o</span>
+                    <span>p</span>
+                    <span>o</span>
+                    <span>s</span>
+                    <span> </span>
+                    <span>d</span>
+                    <span>e</span>
+                    <span> </span>
+                    <span>m</span>
+                    <span>o</span>
+                    <span>i</span>
+                </a>
+            </div>
+            <div class="banner-img offset-rg-1 col-lg-7 col-md-6">
+                <img class="img-fluid perso" src="{{ url_for('static', filename='img/perso.jpg')}}" alt="">
+            </div>  
+            
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start About Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center justify-content-start">
+            
+            <div class="offset-lg-1 col-lg-5 col-md-12 about-right">
+                <div class="section-title">
+                    <h2 class="mb-4">A<br />
+                        Propos De Moi</h2>
+                </div>
+                <div class="mb-35 wow fadeIn" data-wow-duration=".8s" data-wow-delay=".3s">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic tenetur voluptates blanditiis animi fugiat minus voluptate. Quos veritatis repellat asperiores, ipsam reprehenderit iste. Facilis voluptatibus soluta asperiores. Aspernatur, minima!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam numquam sunt molestiae, assumenda sit distinctio maiores voluptatum repellendus, officiis excepturi, itaque saepe labore impedit obcaecati doloribus error explicabo amet. Laborum.
+                    </p>
+                </div>
+                <a href="#" class="primary-btn" data-text="En Savoir Plus">
+                    <span>E</span>
+                    <span>n</span>
+                    <span> </span>
+                    <span>S</span>
+                    <span>a</span>
+                    <span>v</span>
+                    <span>o</span>
+                    <span>i</span>
+                    <span>r</span>
+                    <span> </span>
+                    <span>P</span>
+                    <span>l</span>
+                    <span>u</span>
+                    <span>s</span>
+                </a>
+            </div>
+            <div class="col-lg-5 about-left">
+                <img class="img-fluid" src="{{ url_for('static', filename='img/projet-vinax.png')}}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Area -->
+
+<!-- Start Service Area -->
+<section class="service-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h2><span class="whiteTitle">Mes services</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.0s">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="flaticon-button"></i>
+                        <i class="flaticon-art"></i>
+                        <h4 class="ml-3">Evenements</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi ipsa necessitatibus adipisci culpa quo assumenda odit. Id fugit alias sequi, earum, animi dolore deleniti incidunt vitae voluptate doloremque dolorem.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="flaticon-button"></i>
+                        <h4 class="ml-3">Reportage</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum rerum voluptas dolore at dignissimos, nisi nostrum atque blanditiis consectetur, porro omnis temporibus vel, ad quam! Nesciunt saepe nobis sunt.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="flaticon-button"></i>
+                        <h4 class="ml-3">Clip</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sunt laborum quibusdam fugiat voluptatem, officia, quaerat in nesciunt commodi sapiente placeat molestiae autem. Magni alias nemo accusamus, asperiores pariatur voluptas.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="flaticon-button"></i>
+                        <i class="flaticon-art"></i>
+                        <h4 class="ml-3">PUB</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quaerat accusamus deleniti atque molestiae cupiditate, voluptatem repudiandae possimus minima itaque perferendis saepe. Atque omnis commodi tempore nulla expedita sint incidunt!</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="flaticon-button"></i>
+                        <h4 class="ml-3">...</h4>
+                    </div>
+                    <p>...</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+<!-- End Service Area -->
+
+<!-- Start Work Area Area -->
+<section class="work-area section-gap-top" id="work">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h2><span>Portfolio</span></h2>
+                </div>
+            </div>
+
+            <div class="col-lg-12 d-none">
+                <div class="filters">
+                    <ul>
+                        <li class="active" data-filter=".all"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="filters-content">
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 grid-sizer"></div>
+
+                <div class="col-lg-8 col-md-12 grid-item all wow fadeIn" data-wow-duration="2s" data-wow-delay="0s">
+                    <div class="single-work">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="{{ url_for('static', filename='img/test1.jpg')}}" alt="">
+                            </div>
+                            <div class="middle">
+                                <h4>Projet 1</h4>
+                                <div class="cat">Descrition</div>
+                            </div>
+                            <a class="overlay" href="project-details.html"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 grid-item col-md-6 all wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+                    <div class="single-work">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="{{ url_for('static', filename='img/test2.jpg')}}" alt="">
+                            </div>
+                            <div class="middle">
+                                <h4>Description</h4>
+                                <div class="cat">Projet 2</div>
+                            </div>
+                            <a class="overlay" href="project-details.html"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 grid-item col-md-6 all wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+                    <div class="single-work">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="{{ url_for('static', filename='img/test3.jpg')}}" alt="">
+                            </div>
+                            <div class="middle">
+                                <h4>Projet 3</h4>
+                                <div class="cat">Description</div>
+                            </div>
+                            <a class="overlay" href="project-details.html"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 grid-item col-md-12 all wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+                    <div class="single-work">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="{{ url_for('static', filename='img/photo1.png')}}" alt="">
+                            </div>
+                            <div class="middle">
+                                <h4>Projet 4</h4>
+                                <div class="cat">Description</div>
+                            </div>
+                            <a class="overlay" href="project-details.html"></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-lg-4 text-center grid-item col-md-12 all creative wow fadeIn" data-wow-duration="2s">
+                    <a href="#" class="primary-btn" data-text="Voir Plus">
+                        <span>V</span>
+                        <span>o</span>
+                        <span>i</span>
+                        <span>r</span>
+                        <span> </span>
+                        <span>P</span>
+                        <span>l</span>
+                        <span>u</span>
+                        <span>s</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Work Area Area -->
+
+<!-- Start Pricing Area -->
+<section class="pricing-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h2><span class="whiteTitle">Tarifs</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing_item">
+                    <h3 class="p_title">Shooting</h3>
+                    <p class="p_criteria">Details</p>
+                    <h1 class="p_price">€00.00</h1>
+                    <div class="p_list">
+                        <!-- <ul>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-close cross"></span> Unlimited Entrance</li>
+                            <li><span class="ti-close cross"></span> Unlimited Entrance</li>
+                        </ul> -->
+                        <a class="primary-btn mt-4" href="#" data-text="Reserver">
+                            <span>R</span>
+                            <span>E</span>
+                            <span>S</span>
+                            <span>E</span>
+                            <span>R</span>
+                            <span>V</span>
+                            <span>E</span>
+                            <span>R</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing_item">
+                    <h3 class="p_title">Clip</h3>
+                    <p class="p_criteria">Details</p>
+                    <h1 class="p_price">€00.00</h1>
+                    <div class="p_list">
+                        <!-- <ul>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-close cross"></span> Unlimited Entrance</li>
+                            <li><span class="ti-close cross"></span> Unlimited Entrance</li>
+                        </ul> -->
+                        <a class="primary-btn mt-4" href="#" data-text="Reserver">
+                            <span>R</span>
+                            <span>E</span>
+                            <span>S</span>
+                            <span>E</span>
+                            <span>R</span>
+                            <span>V</span>
+                            <span>E</span>
+                            <span>R</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing_item">
+                    <h3 class="p_title">Mariage</h3>
+                    <p class="p_criteria">Details</p>
+                    <h1 class="p_price">€00.00</h1>
+                    <div class="p_list">
+                        <!-- <ul>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-check"></span> Unlimited Entrance</li>
+                            <li><span class="ti-close cross"></span> Unlimited Entrance</li>
+                            <li><span class="ti-close cross"></span> Unlimited Entrance</li>
+                        </ul> -->
+                        <a class="primary-btn mt-4" href="#" data-text="Reserver">
+                            <span>R</span>
+                            <span>E</span>
+                            <span>S</span>
+                            <span>E</span>
+                            <span>R</span>
+                            <span>V</span>
+                            <span>E</span>
+                            <span>R</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Pricing Area -->
+
+<!-- Start Blog Area -->
+<!-- <section class="blog-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h3>Our Blog</h3>
+                    <h2><span>Latest</span> Good Story</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-recent-blog mb-lg-3 mb-5">
+                    <div class="thumb">
+                        <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <h4 class="mt-4 mb-3">Pictures of the year 2018, from the migrant caravan to Serena do
+                            Williams Harbor dangerous</h4>
+                    </a>
+                    <div class="mb-3 bottom d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="meta">
+                            <span class="ti-user mr-1"></span> Admin
+                            <span class="ti-calendar mr-1"></span> 20/09/2018
+                        </div>
+                    </div>
+                    <p>
+                        Unfeeling agreeable suffering it on smallness newspaper be. So come must
+                        time no as. Do on unpleasing possession as of unreserved. Yet joy exquisite
+                        put sometimes enjoyment perpetual now. Behind lovers eat having length horses
+                        vanity say had its damn owes meter exquisite.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="single-recent-blog mb-lg-3 mb-5">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-5">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mt-md-0 mt-3">
+                            <a href="#">
+                                <h4 class="mb-lg-3 mb-2">Spirits in the sky over Northern Ireland lake</h4>
+                            </a>
+                            <div class="bottom d-flex justify-content-between align-items-center flex-wrap mb-3">
+                                <div class="meta">
+                                    <span class="ti-user mr-1"></span> Admin
+                                    <span class="ti-calendar mr-1"></span> 20/09/2018
+                                </div>
+                            </div>
+                            <p>
+                                Behind lovers eat having length horses vanity say had its mega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-recent-blog mb-lg-3 mb-5">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-5">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mt-md-0 mt-3">
+                            <a href="#">
+                                <h4 class="mb-lg-3 mb-2">Spirits in the sky over Northern Ireland lake</h4>
+                            </a>
+                            <div class="bottom d-flex justify-content-between align-items-center flex-wrap mb-3">
+                                <div class="meta">
+                                    <span class="ti-user mr-1"></span> Admin
+                                    <span class="ti-calendar mr-1"></span> 20/09/2018
+                                </div>
+                            </div>
+                            <p>
+                                Behind lovers eat having length horses vanity say had its mega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-recent-blog mb-lg-3 mb-5">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-5">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/b4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mt-md-0 mt-3">
+                            <a href="#">
+                                <h4 class="mb-lg-3 mb-2">Spirits in the sky over Northern Ireland lake</h4>
+                            </a>
+                            <div class="bottom d-flex justify-content-between align-items-center flex-wrap mb-3">
+                                <div class="meta">
+                                    <span class="ti-user mr-1"></span> Admin
+                                    <span class="ti-calendar mr-1"></span> 20/09/2018
+                                </div>
+                            </div>
+                            <p>
+                                Behind lovers eat having length horses vanity say had its mega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- End Blog Area -->
+
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                <div class="single-footer-widget">
+                    <!-- <h2 class="suivez_moi">Suivez moi</h2> -->
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href=""><i class="ti-facebook"></i><span class="socialSpan">Facebook</span></a></li>
+                            <li><a href=""><i class="ti-twitter"></i><span class="socialSpan">Twitter</span> </a></li>
+                            <li><a href=""><i class="ti-instagram"></i><span class="socialSpan">Instagram</span> </a></li>
+                            <li><a href=""><i class="ti-pinterest"></i><span class="socialSpan">Pinterest</span>
+                            </a></li>
+                            <li><a href=""><i class="ti-youtube"></i><span class="socialSpan">Youtube</span> </a></li>
+                        </ul>
+                    </div>
+                    <div class="social-icons2">
+                        <ul>
+                            <li><a href="#"><i class="ti-facebook">facebook</i></a></li>
+                            <li><a href="#"><i class="ti-twitter">twitter</i></a></li>
+                            <li><a href="#"><i class="ti-instagram">instagram</i></a></li>
+                            <li><a href="#"><i class="ti-pinterest">pinterest</i></a></li>
+                            <li><a href="#"><i class="ti-youtube">youtube</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <!-- <div class="single-footer-widget">
+                    <p>
+                        Text accrocheur 
+                    </p>
+                </div> -->
+            </div>
+            <div class="col-lg-5  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <div id="logo">
+                        <a href="index.html"><img src="{{ url_for('static', filename='img/projet-vinax.png')}}" alt="" title="" /></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="footer-text">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+<!-- ####################### Start Scroll to Top Area ####################### -->
+<div id="back-top">
+    <a title="Go to Top" href="#">
+        <i class="ti-angle-double-up"></i>
+    </a>
+</div>
+<!-- ####################### End Scroll to Top Area ####################### -->
+
+
+<script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/easing.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/hoverIntent.js')}}"></script>
+<script src="{{ url_for('static', filename='js/superfish.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/mn-accordion.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/mail-script.js')}}"></script>
+<script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+{% endblock %}

@@ -1,0 +1,358 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,500,600|Roboto:400,700" rel="stylesheet">
+<!--CSS============================================= -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+
+{% endblock %}
+
+
+
+
+{% block body %}
+<!-- Start Preloader Area -->
+<!-- <div class="preloader-area">
+    <div class="loader-box">
+        <div class="loader"></div>
+    </div>
+</div> -->
+<!-- End Preloader Area -->
+
+<!-- Start Header Area -->
+<header id="header">
+    <div class="container main-menu">
+
+        <div class="row align-items-center d-flex">
+
+            <div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class=""><a href="/">Accueil</a></li>
+                        <li><a class="active" href="/portfolio">Portfolio</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <!-- <li class="menu-has-children"><a href="#">Pages</a>
+                        <ul>
+                            <li><a href="elements.html">Elements</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="project-details.html">Project Details</a></li>
+                        </ul>
+                    </li> -->
+
+                        <!-- <li class="menu-has-children"><a href="">Blog</a>
+                        <ul>
+                            <li><a href="blog-home.html">Blog Home</a></li>
+                            <li><a href="blog-single.html">Blog Single</a></li>
+                        </ul>
+                    </li> -->
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<!-- End Header Area -->
+
+<!-- start banner Area -->
+<section class="banner-area relative portfolioheader">
+    <div class="container portfolioheader-container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12 portfolioheader-about">
+                <h1 class="text-white">Portfolio</h1>
+                <p>Text</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+
+
+
+
+
+
+
+
+
+<!-- /////////////////////////////////// -->
+
+
+<!-- Grids -->
+<div class="grids d-flex justify-content-between">
+    <div class="grid1"></div>
+    <div class="grid2"></div>
+    <div class="grid3"></div>
+    <div class="grid4"></div>
+    <div class="grid5"></div>
+    <div class="grid6"></div>
+    <div class="grid7"></div>
+    <div class="grid8"></div>
+    <div class="grid9"></div>
+</div>
+<br/>
+<!-- ****** Gallery Area Start ****** -->
+<section class="sonar-projects-area" id="projects">
+    <div class="container-fluid">
+        <div class="row sonar-portfolio">
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig"
+                data-wow-delay="300ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test1.jpg')}}"><img src="{{ url_for('static', filename='img/test1.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>Photo1</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig"
+                data-wow-delay="500ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test2.jpg')}}"><img src="{{ url_for('static', filename='img/test2.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>titre photo2</h4>
+                    <p>Description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig"
+                data-wow-delay="700ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test3.jpg')}}"><img src="{{ url_for('static', filename='img/test3.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P3</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits studio wow fadeInUpBig"
+                data-wow-delay="900ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test4.jpg')}}"><img src="{{ url_for('static', filename='img/test4.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P4</h4>
+                    <p>descriptipn</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes fashion wow fadeInUpBig"
+                data-wow-delay="300ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test1.jpg')}}"><img src="{{ url_for('static', filename='img/test1.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P5</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig"
+                data-wow-delay="500ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test5.jpg')}}"><img src="{{ url_for('static', filename='img/test5.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P6</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes fashion wow fadeInUpBig"
+                data-wow-delay="700ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test5.jpg')}}"><img src="{{ url_for('static', filename='img/test5.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P7</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits studio wow fadeInUpBig"
+                data-wow-delay="900ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test2.jpg')}}"><img src="{{ url_for('static', filename='img/test2.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P8</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig"
+                data-wow-delay="300ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test3.jpg')}}"><img src="{{ url_for('static', filename='img/test3.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P9</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits wow fadeInUpBig" data-wow-delay="500ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test2.jpg')}}"><img src="{{ url_for('static', filename='img/test2.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P10</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes wow fadeInUpBig" data-wow-delay="700ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test1.jpg')}}"><img src="{{ url_for('static', filename='img/test1.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P11</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes wow fadeInUpBig" data-wow-delay="700ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test1.jpg')}}"><img src="{{ url_for('static', filename='img/test1.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P12</h4>
+                    <p>description</p>
+                </div>
+            </div>
+
+            <!-- Single gallery Item -->
+            <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits wow fadeInUpBig" data-wow-delay="900ms">
+                <a class="gallery-img" href="{{ url_for('static', filename='img/test3.jpg')}}"><img src="{{ url_for('static', filename='img/test3.jpg')}}" alt=""></a>
+                <!-- Gallery Content -->
+                <div class="gallery-content">
+                    <h4>P13</h4>
+                    <p>description</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ****** Gallery Area End ****** -->
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////// -->
+
+
+
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                <div class="single-footer-widget">
+                    <!-- <h2 class="suivez_moi">Suivez moi</h2> -->
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href=""><i class="ti-facebook"></i><span
+                                        class="socialSpan">Facebook</span></a></li>
+                            <li><a href=""><i class="ti-twitter"></i><span class="socialSpan">Twitter</span>
+                                </a></li>
+                            <li><a href=""><i class="ti-instagram"></i><span
+                                        class="socialSpan">Instagram</span> </a></li>
+                                        <li><a href=""><i class="ti-pinterest"></i><span class="socialSpan">Pinterest</span>
+                                        </a></li>
+                            <li><a href=""><i class="ti-youtube"></i><span class="socialSpan">Youtube</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="social-icons2">
+                        <ul>
+                            <li><a href="#"><i class="ti-facebook">facebook</i></a></li>
+                            <li><a href="#"><i class="ti-twitter">twitter</i></a></li>
+                            <li><a href="#"><i class="ti-instagram">instagram</i></a></li>
+                            <li><a href="#"><i class="ti-pinterest">pinterest</i></a></li>
+                            <li><a href="#"><i class="ti-youtube">youtube</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6">
+                <!-- <div class="single-footer-widget">
+                    <p>
+                        Text accrocheur 
+                    </p>
+                </div> -->
+            </div>
+            <div class="col-lg-5  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <div id="logo">
+                        <a href="index.html"><img src="{{ url_for('static', filename='img/projet-vinax.png')}}" alt=""
+                                title="" /></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="footer-text">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+<!-- ####################### Start Scroll to Top Area ####################### -->
+<div id="back-top">
+    <a title="Go to Top" href="#">
+        <i class="ti-angle-double-up"></i>
+    </a>
+</div>
+<!-- ####################### End Scroll to Top Area ####################### -->
+<!-- ///P -->
+<script src="{{ url_for('static', filename='js-p/jquery/jquery-2.2.4.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js-p/popper.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js-p/bootstrap.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js-p/plugins.js')}}"></script>
+<script src="{{ url_for('static', filename='js-p/active.js')}}"></script>
+<!-- //////// -->
+<script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/easing.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/hoverIntent.js')}}"></script>
+<script src="{{ url_for('static', filename='js/superfish.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/mn-accordion.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/mail-script.js')}}"></script>
+<script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+
+{% endblock %}
