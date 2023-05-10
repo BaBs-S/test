@@ -39,5 +39,5 @@ def contact():
     return render_template('contact.html')
 
 if __name__ == "__main__":
-    app.run(debug=True,port=5005)
+    app.run(debug=False,port="0.0.0.0")
     
